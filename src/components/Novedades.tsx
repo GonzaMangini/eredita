@@ -24,8 +24,8 @@ const Novedades: React.FC = () => {
   return (
     <section id="novedades" className="w-full py-24 mt-16 bg-gradient-to-b">
       <div className="max-w-6xl mx-auto px-4 mb-8">
-        <h2 className="text-2xl md:text-4xl font-brand text-eredita-pink text-center mb-2">Novedades</h2>
-        <p className="text-xl md:text-2xl font-brand text-center text-gray-600 mb-8">Descubre nuestros últimos talleres y creaciones</p>
+        <h2 className="mt-2 text-3xl md:text-5xl lg:text-6xl font-brand text-eredita-pink text-center mb-2">Novedades</h2>
+        <p className="text-xl text-center text-gray-600 mb-8">Descubre nuestros últimos talleres y creaciones</p>
       </div>
 
       {/* Layout en dos columnas en desktop, apilado en móvil */}
@@ -71,13 +71,13 @@ const Novedades: React.FC = () => {
         {/* Panel de texto - se ubica al lado en desktop y debajo en móvil */}
         <div className="space-y-4 md:pl-8">
           <h3 className="text-2xl md:text-3xl font-brand text-eredita-pink">¿Querés estar al tanto de todas las novedades?</h3>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 text-xl leading-relaxed">
             Sumate a nuestra comunidad en Instagram para inspirarte todos los días con ideas, tips y lanzamientos. 
             Tu próxima creación puede empezar con un post. ¡Te espero!
           </p>
           <div>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/ereditaok/?hl=es-la"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-eredita-pink text-white font-medium shadow-lg transition hover:shadow-xl hover:opacity-95"

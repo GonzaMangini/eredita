@@ -4,14 +4,15 @@ interface ImageCarouselProps {
   images: string[];
   alt: string;
   className?: string;
+  autoPlay?: boolean;
 }
 
-const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, alt, className = "" }) => {
+const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, alt, className = "", autoPlay = false }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-advance carousel every 3 seconds
+  // Auto-advance carousel every 3 seconds (only if autoPlay is true)
   useEffect(() => {
-    if (images.length <= 1) return;
+    if (!autoPlay || images.length <= 1) return;
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => 
@@ -20,7 +21,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, alt, className = 
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [autoPlay, images.length]);
 
   // If no images, show placeholder
   if (!images || images.length === 0) {

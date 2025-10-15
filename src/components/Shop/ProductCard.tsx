@@ -45,6 +45,7 @@ const ProductCard = ({ product, onAddToCart, onViewDetails }: ProductCardProps) 
           images={product.images}
           alt={product.name}
           className="w-full h-full object-contain transition-all duration-500"
+          autoPlay={isHovered}
         />
         
         {/* Overlay gradient */}

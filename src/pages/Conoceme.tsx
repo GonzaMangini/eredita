@@ -6,7 +6,7 @@ const Conoceme = () => {
     <div className="bg-eredita-neutral min-h-screen pt-20">
       <section id="conoceme" className="max-w-6xl mx-auto py-24 md:py-28 px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-brand text-eredita-title-pink mb-4">Conoceme</h2>
+          <h2 className="mt-2 text-3xl md:text-5xl lg:text-6xl font-brand text-eredita-title-pink mb-4">Conoceme</h2>
         </div>
         <div className="flex justify-center">
           <CarruselRedondo />

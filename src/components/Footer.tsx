@@ -39,16 +39,10 @@ const Footer: React.FC = () => {
                 <Link className="hover:text-white/90" to="/">EreditaOk</Link>
               </li>
               <li>
-                <Link className="hover:text-white/90" to="/">Tienda</Link>
+                <a className="hover:text-white/90" href="/#tienda">Tienda</a>
               </li>
               <li>
-                <Link className="hover:text-white/90" to="/">Ayuda</Link>
-              </li>
-              <li>
-                <Link className="hover:text-white/90" to="/">Pedidos</Link>
-              </li>
-              <li>
-                <Link className="hover:text-white/90" to="/">Conoceme</Link>
+                <a className="hover:text-white/90" href="/#conoceme">Conoceme</a>
               </li>
             </ul>
           </div>
